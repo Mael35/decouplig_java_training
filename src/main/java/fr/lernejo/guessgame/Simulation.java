@@ -26,7 +26,7 @@ public class Simulation {
 
         if (number == numberToGuess)
         {
-            logger.log("Good answer !\n");
+            logger.log("BRAVO\n");
 
             return true;
         }
@@ -52,7 +52,9 @@ public class Simulation {
                 break;
             }
 
-            logger.log("Try again !\n");
+            if ((count + 1) != nbmax){
+                logger.log("Try again !\n");
+            }
         }
 
         if (!failed)
@@ -62,6 +64,7 @@ public class Simulation {
 
         else
         {
+            logger.log("Perdu !\n");
             logger.log("The number was " + numberToGuess + " !\n");
         }
 
@@ -72,6 +75,6 @@ public class Simulation {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss:SSS");
         Date date = new Date(timeUsed);
         String time = simpleDateFormat.format(date);
-        logger.log("Time elapsed : " + time + "\n");
+        logger.log(time);
     }
 }

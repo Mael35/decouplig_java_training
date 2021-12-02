@@ -17,12 +17,12 @@ public class HumanPlayer implements Player {
     public void respond(boolean lowerOrGreater) {
         if (lowerOrGreater)
         {
-            logger.log("Greater !\n");
+            logger.log("Plus\n");
         }
 
         else
         {
-            logger.log("Lower !\n");
+            logger.log("Moins\n");
         }
     }
 }
