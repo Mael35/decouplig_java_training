@@ -26,7 +26,7 @@ public class Simulation {
 
         if (number == numberToGuess)
         {
-            logger.log("BRAVO\n");
+            logger.log("Win\n");
 
             return true;
         }
@@ -64,7 +64,7 @@ public class Simulation {
 
         else
         {
-            logger.log("Perdu !\n");
+            logger.log("Loose\n");
             logger.log("The number was " + numberToGuess + " !\n");
         }
 
